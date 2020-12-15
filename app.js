@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes')
 
-const { MongoDb } = require('./config/config');
+// const { MongoDb } = require('./config/config');
 const { result } = require('lodash');
 const { render } = require('ejs');
 // express app
@@ -15,7 +15,7 @@ const app = express();
 // }
 
 //  connect to mongodb
-mongoose.connect(process.env.MONGODB_URI || MongoDb, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI , { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => {
         console.log('mongoDb connected')
         app.listen(process.env.PORT || 3000);
