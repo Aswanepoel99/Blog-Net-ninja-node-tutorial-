@@ -1,6 +1,9 @@
 {
   "name": "netninja-node",
   "version": "1.0.0",
+  "engines": {
+    "npm": "14.15.1"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
