@@ -10,9 +10,9 @@ const { render } = require('ejs');
 // express app
 const app = express();
 
-if (process.env.NODE_ENV === 'production'){
-    
-}
+// if (process.env.NODE_ENV === 'production'){
+
+// }
 
 //  connect to mongodb
 mongoose.connect(process.env.MONGODB_URI || MongoDb, { useNewUrlParser: true, useUnifiedTopology: true })
